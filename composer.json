@@ -1,0 +1,34 @@
+{
+    "name": "etna/bocal-account-manager",
+    "description": "Wrapper PHP pour l'interaction avec l'API de console bocal",
+    "keywords": ["bocal", "proxy", "silex"],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "ETNA",
+            "email": "dev@etna-alternance.net",
+            "homepage": "http://etna-alternance.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "silex/silex": "~2.0@dev",
+        "guzzlehttp/guzzle": "6.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "ETNA\\Silex\\Provider\\BocalAccounts\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "repositories": [
+       {
+           "type": "composer",
+           "url": "https://blu-composer.herokuapp.com"
+       }
+   ]
+}
