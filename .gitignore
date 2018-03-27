@@ -1,0 +1,23 @@
+# Emacs
+*~
+
+# OS X
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# test
+coverage
+tmp/*
+
+app/resources/cache/*
+app/resources/log/*
+/public/assets/*
+
+
+# Composer components
+vendor
+
+# phpstorm
+.idea
