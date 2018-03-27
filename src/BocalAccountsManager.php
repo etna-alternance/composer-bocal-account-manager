@@ -103,7 +103,7 @@ class BocalAccountsManager
 
         return $this->request("POST", "/api/etna.io/users/{$account_id}", [
             'X-Fields' => 'id,firstname,lastname,uuid,group,synchronized,external_email'
-        ], $body);
+        ], $account_data);
     }
 
     /**
