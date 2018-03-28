@@ -21,9 +21,17 @@ class BocalAccountsManagerProvider implements ServiceProviderInterface
         }
 
         $app["bam"] = $app->share(
-            function (Application $app) {
-                new BocalAccountsManager($api_endpoint, $api_key, $read_only);
+            function (Application $app) use ($api_key, $api_endpoint, $read_only) {
+                return new BocalAccountsManager($api_endpoint, $api_key, $read_only);
             }
         );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function boot(Application $app)
+    {
+        return $app;
     }
 }
